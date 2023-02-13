@@ -2,7 +2,7 @@
 ## Estructuras de Datos
 
 # 1) Crear una lista que contenga nombres de ciudades del mundo que contenga más de 5 elementos e imprimir por pantalla
-ciudades = ['Caracas', 'Tokio', 'París', 'Tailandia', 'Alemania']
+ciudades = ['Caracas', 'Tokio', 'París', 'Bankok', 'Munich']
 # print(ciudades)
 
 
@@ -71,10 +71,10 @@ ciudades.extend(mas_ciudades)
 
 # 15) Mostrar la lista multiplicada por 4
 # print(ciudades * 4)
-print(ciudades)
+# print(ciudades)
 
 # 16) Crear una tupla que contenga los números enteros del 1 al 20
-# numeros = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20)
+# numeros = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 10, 5, 150, -45, 5)
 # print(numeros)
 # print(type(numeros))
 
@@ -99,13 +99,32 @@ print(ciudades)
 
 
 # 20) Mostrar la cantidad de veces que se encuentra un elemento específico dentro de la tupla y de la lista
+# print(ciudades.count('Tokio'))
+# print(numeros.count(5))
+
 
 # 21) Convertir la tupla en una lista
+# nueva_lista = list(numeros)
+# print(nueva_lista)
 
 # 22) Desempaquetar solo los primeros 3 elementos de la tupla en 3 variables
+# num1, num2, num3 = numeros[0:3]
+# print(num1)
+# print(num2)
+# print(num3)
+
 
 # 23) Crear un diccionario utilizando la lista crada en el punto 1, asignandole la clave "ciudad". Agregar tambien otras claves, como puede ser "Pais" y "Continente".
+dict_mundo = {
+    'Ciudades' : ciudades,
+    'Pais' : ['Venezuela', 'Francia', 'Tailandia', 'Rusia', 'Italia', 'Alemania'],
+    'Continente' : ['América', 'Oceanía', 'Europa', 'Äfrica', 'Asia']
+}
+
 
 # 24) Imprimir las claves del diccionario
+# print(dict_mundo.keys())
+
 
 # 25) Imprimir las ciudades a través de su clave
+print(dict_mundo['Ciudades'])

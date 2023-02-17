@@ -2,7 +2,7 @@
 ## Estructuras de Datos
 
 # 1) Crear una lista que contenga nombres de ciudades del mundo que contenga más de 5 elementos e imprimir por pantalla
-ciudades = ['Caracas', 'Tokio', 'París', 'Bankok', 'Munich']
+ciudades = ['Caracas', 'Tokio', 'París', 'Bankok', 'Munich', 'Roma']
 # print(ciudades)
 
 
@@ -23,14 +23,14 @@ ciudades = ['Caracas', 'Tokio', 'París', 'Bankok', 'Munich']
 
 
 # 6) Visualizar los primeros 4 elementos de la lista
-# print(ciudades[0:4])
+# print(ciudades[:4])
 
 
 # 7) Agregar una ciudad más a la lista que ya exista y otra que no ¿Arroja algún tipo de error?
 ciudades.append('Tokio')
-ciudades.append('Roma')
+ciudades.append('Praga')
 # print(ciudades)
-# No arroja error, si el elemento existe sale duplicado
+# No arroja error, si el elemento existe, sale duplicado
 
 
 # 8) Agregar otra ciudad, pero en la cuarta posición
@@ -53,6 +53,7 @@ ciudades.extend(mas_ciudades)
 # 11) ¿Qué pasa si se busca un elemento que no existe?
 # print(ciudades.index('El Cairo'))
 # Buscando por el índice, arroja un error si no existe
+# print('El Cairo' in ciudades)
 
 
 # 12) Eliminar un elemento de la lista
@@ -77,6 +78,9 @@ ciudades.extend(mas_ciudades)
 # numeros = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 10, 5, 150, -45, 5)
 # print(numeros)
 # print(type(numeros))
+# tupla = range(1, 21)
+# print(tupla)
+# print(type(tupla))
 
 
 # 17) Imprimir desde el índice 10 al 15 de la tupla
@@ -108,7 +112,7 @@ ciudades.extend(mas_ciudades)
 # print(nueva_lista)
 
 # 22) Desempaquetar solo los primeros 3 elementos de la tupla en 3 variables
-# num1, num2, num3 = numeros[0:3]
+# num1, num2, num3 = numeros[:3]
 # print(num1)
 # print(num2)
 # print(num3)
@@ -128,3 +132,7 @@ dict_mundo = {
 
 # 25) Imprimir las ciudades a través de su clave
 print(dict_mundo['Ciudades'])
+
+
+# 24) Imprimir los valores del diccionario
+# print(dict_mundo.values())

@@ -178,7 +178,7 @@
 
 
 # 15) A partir de la lista de a continuación, contar la cantidad total de elementos que contiene, teniendo en cuenta que un elemento de la lista podría ser otra lista:<br>
-lis = [[1,2,3,4],'rojo','verde',[True,False,False],['uno','dos','tres']]
+# lis = [[1,2,3,4],'rojo','verde',[True,False,False],['uno','dos','tres']]
 # total = 0
 # for elemento in lis:
 #     if type(elemento) == list:

@@ -180,23 +180,23 @@
 #         print(f"Ejecución terminada")
 #         break
 
-n = int(input("Ingresa un número para saber si es primo\n"))
-sigue = 1
-primo = True
-while sigue == 1:
-    for div in range(2, n):
-        if n % div == 0:
-            primo = False
-            break
-    if primo:
-        print(f"{n} es primo")
-        print(f"¿Desea encontrar el siguiente número primo?\n")
-        if input() != '1':
-            print("Se finaliza el proceso")
-            break
-    else:
-        primo = True
-    n += 1
+# n = int(input("Ingresa un número para saber si es primo\n"))
+# sigue = 1
+# primo = True
+# while sigue == 1:
+#     for div in range(2, n):
+#         if n % div == 0:
+#             primo = False
+#             break
+#     if primo:
+#         print(f"{n} es primo")
+#         print(f"¿Desea encontrar el siguiente número primo?\n")
+#         if input() != '1':
+#             print("Se finaliza el proceso")
+#             break
+#     else:
+#         primo = True
+#     n += 1
 
 
 

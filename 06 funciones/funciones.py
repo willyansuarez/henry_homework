@@ -206,36 +206,36 @@
 # print(conversion_temperatura(32, 'Cel', 'Kel'))
 
 # Solución video
-def conversion_grados(valor, origen, destino):
-    if origen == 'celsius':
-        if destino == 'celsius':
-            valor_destino = valor
-        elif destino == 'farenheit':
-            valor_destino = (valor * 9 / 5) + 32
-        elif destino == 'kelvin':
-            valor_destino = valor + 273.15
-        else:
-            'Parámetro de destno incorrecto'
-    elif origen == 'farenheit':
-        if destino == 'celsius':
-            valor_destino = (valor - 32) * 5 / 9
-        elif destino == 'farenheit':
-            valor_destino = valor
-        elif destino == 'kelvin':
-            valor_destino = ((valor - 32) * 5 / 9) + 273.15
-        else:
-            'Parámetro de destno incorrecto'
-    elif origen == 'kelvin':
-        if destino == 'celsius':
-            valor_destino = valor - 273.15
-        elif destino == 'farenheit':
-            valor_destino = (valor - 273.15) * 9 / 5 + 32 
-        elif destino == 'kelvin':
-            valor_destino = valor
-        else:
-            'Parámetro de destno incorrecto'
+# def conversion_grados(valor, origen, destino):
+#     if origen == 'celsius':
+#         if destino == 'celsius':
+#             valor_destino = valor
+#         elif destino == 'farenheit':
+#             valor_destino = (valor * 9 / 5) + 32
+#         elif destino == 'kelvin':
+#             valor_destino = valor + 273.15
+#         else:
+#             'Parámetro de destno incorrecto'
+#     elif origen == 'farenheit':
+#         if destino == 'celsius':
+#             valor_destino = (valor - 32) * 5 / 9
+#         elif destino == 'farenheit':
+#             valor_destino = valor
+#         elif destino == 'kelvin':
+#             valor_destino = ((valor - 32) * 5 / 9) + 273.15
+#         else:
+#             'Parámetro de destno incorrecto'
+#     elif origen == 'kelvin':
+#         if destino == 'celsius':
+#             valor_destino = valor - 273.15
+#         elif destino == 'farenheit':
+#             valor_destino = (valor - 273.15) * 9 / 5 + 32 
+#         elif destino == 'kelvin':
+#             valor_destino = valor
+#         else:
+#             'Parámetro de destno incorrecto'
     
-    return valor_destino
+#     return valor_destino
 
 # print('1 grado celsius a celsius ', conversion_grados(1, 'celsius', 'celsius'))
 # print('1 grado celsius a kelvin ', conversion_grados(1, 'celsius', 'kelvin'))
